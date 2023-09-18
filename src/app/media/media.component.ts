@@ -81,7 +81,8 @@ export class MediaComponent implements OnInit {
   tag_list: any = [];
   tag_list_update: any = [];
   file: File | any = null;
-  image_data: any = '';
+  image_data1: any = '';
+  image_data : any = '';
   ngOnInit(): any {
 
     // this.articles=[
