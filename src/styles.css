@@ -1,0 +1,32 @@
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { cursor: pointer;}
+a:active { text-decoration: none; }
+
+.navbar-badge {
+    font-size: .2rem;
+    font-weight: 200;
+    padding: 1px 2px;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+.badge-warning {
+    color: #1f2d3d;
+    background-color: #ffc107;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 65%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
