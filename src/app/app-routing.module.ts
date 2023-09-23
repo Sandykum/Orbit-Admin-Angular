@@ -8,6 +8,7 @@ import { SurveyQuestionComponent } from './survey-question/survey-question.compo
 import { AuthGuard } from './shared/auth.guard';
 
 import { MediaComponent } from './media/media.component';
+import { BookingsComponent } from './bookings/bookings.component';
 
 const routes: Routes = [
   // {path:'Bloom/admin/dashboard', component: HomeComponent, canActivate:[AuthGuard]},
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'Bloom/admin/login', pathMatch: 'full' },
 
   {path:'Bloom/admin/media', component: MediaComponent},
+  {path:'Bloom/admin/booking', component: BookingsComponent},
 ];
 
 @NgModule({

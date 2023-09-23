@@ -355,7 +355,7 @@ export class ArticleComponent implements OnInit {
       category: item["category"],
       heading: item["heading"],
       tags: item["tags"],
-      description: item["description test111111"],
+      description: item["description test"],
       imageurl: item["thumbnail_url"],
       version: version,
       publishDate: publish_date

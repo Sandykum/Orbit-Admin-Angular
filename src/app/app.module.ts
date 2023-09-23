@@ -17,6 +17,8 @@ import { TagInputModule } from 'ngx-chips'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { MediaComponent } from './media/media.component';
+import { BookingsComponent } from './bookings/bookings.component';
+import { NgbTimepickerModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { MediaComponent } from './media/media.component';
     SurveyQuestionComponent,
     ArticleComponent,
     MediaComponent,
+    BookingsComponent,
     
   ],
   imports: [
@@ -40,7 +43,8 @@ import { MediaComponent } from './media/media.component';
     FormsModule,
     TagInputModule,
     BrowserAnimationsModule,
-    AngularEditorModule
+    AngularEditorModule,
+    NgbTimepickerModule
   ],
   providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy}
