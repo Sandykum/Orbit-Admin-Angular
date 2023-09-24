@@ -1,0 +1,307 @@
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!-- Preloader -->
+    <!-- <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake" src="../../assets/images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+          </div> -->
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-create-sq">Create a new Article</a>
+        </li>
+
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-help">Help</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+
+
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell" style="position: relative; left: -15px;"></i>
+            <span class="badge badge-warning navbar-badge">1</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-user mr-2"></i> Welcome to Bloom Admin Portal
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+              <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                <i class="fas fa-expand-arrows-alt"></i>
+              </a>
+            </li> -->
+        <!-- <li class="nav-item">
+                <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+                  <i class="fas fa-th-large"></i>
+                </a>
+              </li> -->
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="./assets/images/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">Bloom</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="./assets/images/admin-logo.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Admin</a>
+          </div>
+        </div>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                       with font-awesome or any other icon font library -->
+            <!-- <li class="nav-item">
+                  <a (click)="router.navigate(['Bloom/admin/dashboard']);" class="nav-link">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                      Dashboard
+                    </p>
+                  </a>
+                </li> -->
+
+            <li class="nav-item">
+              <a (click)="router.navigate(['/Bloom/admin/surveyquestions']);" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Survey Questions
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a (click)="router.navigate(['/Bloom/admin/article']);" class="nav-link ">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                  Articles
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a (click)="router.navigate(['/Bloom/admins']);" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Admins
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a (click)="router.navigate(['/Bloom/admin/Media']);" class="nav-link active">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                  Media
+                </p>
+              </a>
+            </li>
+
+            <!-- <li class="nav-item">
+                <a (click)="logout()" class="nav-link">
+                  <i class="nav-icon fas fa-sign-out-alt"></i>
+                  <p>
+                    Logout
+                  </p>
+                </a>
+              </li> -->
+
+            <!-- <li class="nav-header">EXAMPLES</li> -->
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Bookings</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Articles</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+
+      <!-- 1111111111111111111111111111111111111111111111111111111 -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+
+
+                  <!-- <div [formGroup]="article" > -->
+
+                  <div class="row">
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <div>
+                          <label>Date to Publish</label>
+                        </div>
+                        <div style="display:inline-flex;flex-direction: row;align-items: center">
+                          <input class="form-control" placeholder="yyyy-mm-dd" formControlName="Date"
+                            ngbDatepicker #d1="ngbDatepicker">
+
+                          <a style="padding-left: 2%;" (click)="d1.toggle()" class="nav-link"
+                            style="align-items: flex-end;">
+                            <i class="nav-icon fas fa-calendar"></i>
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Ticket-Type</label>
+                        <select formControlName="version"
+                          class="form-control">
+                          <option [ngValue]="null" disabled>Select Version</option>
+                          <option *ngFor="let item of versions" [ngValue]="item.type">{{item.type}}</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="panel-body">
+
+                    <button (click)="addRow()" class="btn btn-primary pull-right"
+                      style="cursor: pointer;">Add</button><br>
+                    <table class="table table-bordered">
+                      <thead class="text text-primary">
+                        <tr>
+                          <th>Slots</th>
+                          <th>Count</th>
+                          <!--         <th>Mobile Number</th>-->
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of rows; let i = index;">
+                          <td>
+                            <table class="table table-borderless">
+                              <thead class="text text-primary">
+                                <tr>
+                                  <th>
+                                    From
+                                  </th>
+                                  <th>To</th>
+                                </tr>
+                              </thead>
+
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <ngb-timepicker [(ngModel)]="rows[i].name" [meridian]="meridian"></ngb-timepicker>
+                                  </td>
+                                  <td>
+                                    <ngb-timepicker [(ngModel)]="rows[i].mobno" [meridian]="meridian"></ngb-timepicker>
+                                  </td>
+                                </tr>
+                              </tbody>
+
+                            </table>
+                            <!-- <input [(ngModel)]="rows[i].name" class="form-control" type="text" /> -->
+                          </td>
+                          <td class="align-middle">
+                            <input [(ngModel)]="rows[i].email"  type="number"  />
+                          </td>
+                          
+                            <!-- <input [(ngModel)]="rows[i].mobno" class="form-control" type="text"/>
+                                 </td> -->
+                          <td class="align-middle"><button class="btn btn-danger" (click)="deleteRow(i)"
+                              style='cursor: pointer;'>Remove</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button class="btn btn-info" (click)="submit()">Submit</button>
+                  </div>
+
+                </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        <!-- </div> -->
+      </section>
+
+
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>Copyright &copy;<a href="https://bloom.io">Bloom</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 0.0.1
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+  <!-- Angular JS -->
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js'></script>
+  <!-- Angular Sanitize JS -->
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.min.js'></script>
+  <!-- Text Angular JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.1.2/textAngular.min.js'></script>
+
+  <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+
+</body>
